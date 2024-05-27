@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/michal/Projekty/SGGW/MSI/MSI.csproj": {}
+  },
+  "projects": {
+    "/home/michal/Projekty/SGGW/MSI/MSI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/michal/Projekty/SGGW/MSI/MSI.csproj",
+        "projectName": "MSI",
+        "projectPath": "/home/michal/Projekty/SGGW/MSI/MSI.csproj",
+        "packagesPath": "/home/michal/.nuget/packages/",
+        "outputPath": "/home/michal/Projekty/SGGW/MSI/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/michal/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.125/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
