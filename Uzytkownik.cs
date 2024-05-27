@@ -12,7 +12,7 @@ public abstract class Uzytkownik
     protected int maxLiczbaCzatow = 20;
     protected int minimalnyWiek = 12;
 
-    protected List<Czat> czaty = new List<Czat>();
+    public List<Czat> czaty = new List<Czat>();
 
     protected bool zablokowany = false;
 
