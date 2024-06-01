@@ -17,6 +17,8 @@ public abstract class Uzytkownik
     protected bool zablokowany = false;
 
     protected string kraj;
+
+    public string Kraj { get; private set; }
     public Uzytkownik(string imie, string nazwisko, string email, int wiek, DateTime dataUrodzenia, string kraj)
     {
         this.imie = imie; this.nazwisko=nazwisko; this.email = email; this.wiek = wiek; this.dataUrodzenia = dataUrodzenia; this.kraj = kraj;

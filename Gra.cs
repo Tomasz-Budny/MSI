@@ -4,6 +4,8 @@ public abstract class Gra
     int maksymalnaIloscGraczy;
     float sredniCzasTrwania; //orientacyjny czas
 
+    static List<Gra> gry;
+
     public Gra(string nazwa, int maksymalnaIloscGraczy, float sredniCzasTrwania)
     {
         this.nazwa = nazwa;
@@ -11,6 +13,11 @@ public abstract class Gra
         this.sredniCzasTrwania = sredniCzasTrwania;
     }
     
+    public static List<Gra> wyszukajGry()
+    {
+        return gry;
+    }
+
     public virtual void uzyjPodstawowychUstawien(){
         //standardowe ustawienia
     }

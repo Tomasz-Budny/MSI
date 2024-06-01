@@ -14,6 +14,6 @@ public class Administrator : Uzytkownik
         // metoda blokuje użytkwnika o danym pseudonimie
         
     }
-    private void UsunSerwer(Serwer serwer){}
-    private void StwórzSerwer(){}
+    private void UsunSerwer(Serwer serwer) {}
+    private void StwórzSerwer() {}
 }
