@@ -2,5 +2,5 @@
 {
     Dostępny,
     WRozgywce,
-    Platynowa
+    Zablokowany
 }

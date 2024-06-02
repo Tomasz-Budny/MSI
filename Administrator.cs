@@ -16,4 +16,11 @@ public class Administrator : Uzytkownik
     }
     private void UsunSerwer(Serwer serwer) {}
     private void StwórzSerwer() {}
+
+    public void OdblokujGracza()
+    {
+        var prośba = ProśbaOOdblokowanie.WyszukajProśbe(null , null);
+        prośba.gracz.UstawStatusDostępny();
+        ProśbaOOdblokowanie.UsuńProśbe(prośba);
+    }
 }
