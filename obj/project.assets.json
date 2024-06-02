@@ -8,24 +8,26 @@
     "net6.0": []
   },
   "packageFolders": {
-    "/home/michal/.nuget/packages/": {}
+    "C:\\Users\\Michał\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/michal/Projekty/SGGW/MSI/MSI.csproj",
+      "projectUniqueName": "B:\\RoznyStuff\\Nauka zdalna studia\\SEMESTR M1\\MSI\\ProjektGit\\MSI\\MSI.csproj",
       "projectName": "MSI",
-      "projectPath": "/home/michal/Projekty/SGGW/MSI/MSI.csproj",
-      "packagesPath": "/home/michal/.nuget/packages/",
-      "outputPath": "/home/michal/Projekty/SGGW/MSI/obj/",
+      "projectPath": "B:\\RoznyStuff\\Nauka zdalna studia\\SEMESTR M1\\MSI\\ProjektGit\\MSI\\MSI.csproj",
+      "packagesPath": "C:\\Users\\Michał\\.nuget\\packages\\",
+      "outputPath": "B:\\RoznyStuff\\Nauka zdalna studia\\SEMESTR M1\\MSI\\ProjektGit\\MSI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/michal/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Michał\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -49,7 +51,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -58,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.125/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

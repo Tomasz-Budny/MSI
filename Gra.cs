@@ -15,6 +15,7 @@ public abstract class Gra
     
     public static List<Gra> wyszukajGry()
     {
+        // dodatkowo filtrowanie wyszukiwania
         return gry;
     }
 
