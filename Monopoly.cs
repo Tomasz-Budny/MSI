@@ -9,5 +9,9 @@ public class Monopoly : Gra
         }
     }
     public virtual void uzyjPodstawowychUstawien(){}
-    public virtual void glownaPetlaRozgrywki(){}
+	public override bool glownaPetlaRozgrywki()
+	{
+		// obs³ugujê turê gracza, gra siê koñczy gdy zostanie jeden gracz nie-bankrut
+		return base.glownaPetlaRozgrywki();
+	}
 }

@@ -3,6 +3,7 @@ public abstract class Gra
     string nazwa;
     int maksymalnaIloscGraczy;
     float sredniCzasTrwania; //orientacyjny czas
+    List<Gracz> graczeWGrze = new List<Gracz>();
 
     static List<Gra> gry;
 
@@ -22,7 +23,11 @@ public abstract class Gra
     public virtual void uzyjPodstawowychUstawien(){
         //standardowe ustawienia
     }
-    public virtual void glownaPetlaRozgrywki(){
+    public virtual bool glownaPetlaRozgrywki(){
         //standardowa obsługa systemów turowych
+        //jesli tura w którj została uruchomiona jest turą w której ktoś wygrał
+        bool czyZakonczona = false; // domyslnie zwraca false, metoda i tak zostaje nadpisana w dziedziczeniu
+
+        return czyZakonczona;
     }
 }

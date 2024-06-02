@@ -1,6 +1,6 @@
 public class Szachy : Gra
 {
-    private string[] figury;
+    private figurySzachowe[][] plansza;
 
     public Szachy(string nazwa, float sredniCzasTrwania) : base(nazwa, 2, sredniCzasTrwania)
     {
@@ -11,11 +11,13 @@ public class Szachy : Gra
     {
         base.uzyjPodstawowychUstawien();
     }
-    public override void glownaPetlaRozgrywki()
+    public override bool glownaPetlaRozgrywki()
     {
-        base.glownaPetlaRozgrywki();
+        // obsługuję turę gracza, przesuwając figury i sprawdza, czy jest szach lub mat
+        // przy macie zwraca true, w pozostałych przypadkach false
+        return base.glownaPetlaRozgrywki();
     }
 }
 public enum figurySzachowe{
-    pionek, skoczek, wieza, goniec, hetman, krol
+    pionek, skoczek, wieza, goniec, hetman, krol, pusto
 }
