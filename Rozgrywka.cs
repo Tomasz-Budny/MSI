@@ -89,14 +89,8 @@ public class Rozgrywka
         // gdy host lub gracze wyszli z gry przed jej zakoñczeniem
     }
 
-    public void WyjdŸZTworzeniaGry()
-    {
-        // TODO: Jak to napisaæ -- chyba nawet nie mamy tego w projekcie, do wywalenia?
-    }
-
     public Gra PobierzInformacjeOGrze(int id_gry)
     {
-        // TODO: SprawdŸ czy to dobrze jak nie to popraw
 
         return Gra.wyszukajGry()[id_gry];
     }
@@ -110,7 +104,7 @@ public class Rozgrywka
         // Wyœwietla info o grze jak tabela rankingowa, czas trwania gry, obecni gracze
     }
 
-    public static void Do³¹cz(Gracz gracz)
+    public void Do³¹cz(Gracz gracz)
     {
         // sprawdza czy liczba graczy z tym graczem nie bêdzie przekraczaæ maksymalnej liczby - jeœli nie dodaje go do listy graczy oczekuj¹cych w lobby
     }
@@ -123,12 +117,15 @@ public class Rozgrywka
 
     public void StwórzLobby()
     {
-        // TODO: Obczaj jak to TECHNICZNIE powinno dzia³aæ
+        // inicjuje listê graczy
+        gracze = new List<Gracz>();
+        gracze.Add(hostRozgrywki);
     }
 
     public void EdytujUstawienia()
     {
-        // TODO: Jakie ustawienia
+        // typu maksymalna liczba graczy
+        // lub zmiana/dodanie/usuniêcie has³a
     }
 
     public void WyœwietlFormatkêDanychPodstawowych() { }
@@ -185,11 +182,12 @@ public class Rozgrywka
         serwer = Serwer.wybierzNajblizszySerwer(hostRozgrywki.Kraj);
     }
 
-    public void SprawdŸHas³o()
+    public bool SprawdŸHas³o(string haslo)
     {
         // Metoda wywo³ywana przez SprawdŸHas³o z klasy ProœbaDo³¹czenia
         // sprawdza czy has³o podane podczas do³¹czania zgadza siê z ustawionym przez hosta
         // jest to oddzielna metoda, aby unikn¹c publicznego dostêpu do pola z has³em
+        return haslo.Equals(this.has³o); // uproszczona metoda bez hashowania
     }
 
     public void WykonajTurêDlaGracza(Gracz gracz)

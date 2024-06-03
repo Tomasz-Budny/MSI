@@ -7,10 +7,12 @@ public class ProsbaDolaczenia
     Gracz gracz;
     Rozgrywka rozgrywka;
 
-    public void sprawdzHaslo(string haslo){
+    public bool sprawdzHaslo(string haslo){
         //sprawdza czy podane hasło zgadza się z hasłem rozgrywki
+        return rozgrywka.SprawdźHasło(haslo);
     }
     public void dolacz(){
         // dołącza gracza do lobby rozgrywki
+        rozgrywka.Dołącz(gracz);
     }
 }
