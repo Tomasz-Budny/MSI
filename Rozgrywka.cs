@@ -70,7 +70,9 @@ public class Rozgrywka
 
     private void AktualizujInfo()
     {
-        // TODO: Napisz co to robi
+        // aktualizuje informacje zwi¹zane w gr¹ podczas ka¿dej tury
+        // np ilosc pieniedzy gracza w monopoly,
+        // lub czy gracz szachuje króla w szachach
     }
 
     private void AktualizujRanking()
@@ -83,19 +85,20 @@ public class Rozgrywka
 
     public void PrzerwijRozgrywkê()
     {
-        // TODO: czym to siê ró¿ni od ZakoñczRozgrywkê?
+        // uruchamiane w sytuacji gdy rozgrywka nie zakoñczy³a siê prawid³owo
+        // gdy host lub gracze wyszli z gry przed jej zakoñczeniem
     }
 
     public void WyjdŸZTworzeniaGry()
     {
-        // TODO: Jak to napisaæ
+        // TODO: Jak to napisaæ -- chyba nawet nie mamy tego w projekcie, do wywalenia?
     }
 
-    public List<Gra> PobierzInformacjeOGrze()
+    public Gra PobierzInformacjeOGrze(int id_gry)
     {
         // TODO: SprawdŸ czy to dobrze jak nie to popraw
 
-        return Gra.wyszukajGry();
+        return Gra.wyszukajGry()[id_gry];
     }
 
     public void WyœwietlKomunikatODo³¹czeniuGracza() { }
@@ -104,14 +107,12 @@ public class Rozgrywka
 
     public void WyœwietlInfoOGrze()
     {
-        // Wyœwietla info o grze jak tabela rankingowa lokalan czas trwania gry
-        // TODO: Zobacz czy dobrze
+        // Wyœwietla info o grze jak tabela rankingowa, czas trwania gry, obecni gracze
     }
 
     public static void Do³¹cz(Gracz gracz)
     {
-        // sprawdza czy liczba graczy z tym graczem nie bêdzie przekraczaæ maksymalnej liczby - jeœli nie dodaje go do listy graczy
-        // TODO: SprawdŸ swój diagram sekwencji i zweryfikuj dzia³anie tej metody - najwy¿ej popraw tu
+        // sprawdza czy liczba graczy z tym graczem nie bêdzie przekraczaæ maksymalnej liczby - jeœli nie dodaje go do listy graczy oczekuj¹cych w lobby
     }
 
     public static Rozgrywka Wyszukaj(string nazwa)
@@ -161,22 +162,17 @@ public class Rozgrywka
 
     public void PonówPróbeDo³¹czenia()
     {
-        // TODO: Opisz co to robi
+        // Pyta gracza czy chce spróbowaæ po³¹czyæ siê ponownie z rozgrywk¹
     }
 
     public void Zarz¹dzajGraczami()
     {
-        // TODO: Opisz co to robi
-    }
-
-    public void ZapiszWyniki()
-    {
-        // TODO: Czy to potrzebne? Mamy metodê do aktualizowania rankingu
+        // wyœwietla hostowi panel pozwalaj¹cy wyrzucaæ i dodawaæ graczy
     }
 
     public void ZapiszRozgrywkê()
     {
-        // TODO: jak to ma dzia³aæ? mamy metodê do dodawania do ekstensji - stwórz rozgrywkê
+        // Zapisuje dane o rozgrywce w oddzielnej bazie danych (np do przysz³ej analizy)
     }
 
     public void WybierzHas³o()
@@ -191,12 +187,14 @@ public class Rozgrywka
 
     public void SprawdŸHas³o()
     {
-        // TODO: Co to metoda ma robiæ?
+        // Metoda wywo³ywana przez SprawdŸHas³o z klasy ProœbaDo³¹czenia
+        // sprawdza czy has³o podane podczas do³¹czania zgadza siê z ustawionym przez hosta
+        // jest to oddzielna metoda, aby unikn¹c publicznego dostêpu do pola z has³em
     }
 
     public void WykonajTurêDlaGracza(Gracz gracz)
     {
-        // Sprawdza czy gracz istnieje nastêpnie pozwala mu wykonaæ turê odpalaj¹c metodê g³óna pêtla rozgrywki. Na koniec aktualizuje lokalny ranking
+        // Sprawdza czy gracz istnieje nastêpnie pozwala mu wykonaæ turê odpalaj¹c metodê g³ówna pêtla rozgrywki. Na koniec aktualizuje lokalny ranking
         // TODO: Trzeba przemyœleæ jak œledziæ proces w rozgrywce - póki co ten element kuleje u nas. Ja bym proponowa³ zaktualizowaæ g³ówn¹ pêtle rozgrywki tak aby zwraca³a wyniki poszczególnych
         // graczy ew. posortowano wed³ug tego kto wygrywa listê. Pewnie przyda³oby siê na Grze mieæ referencje do graczy i zrobiæ z tego jakiœ s³ownik punktów. Jak masz lepszy pomys³ pomyœl i zaimplementuj.
     }
