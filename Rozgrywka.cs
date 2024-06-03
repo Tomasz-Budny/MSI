@@ -14,7 +14,7 @@ public class Rozgrywka
     Serwer serwer;
     Gra gra;
     List<Gracz> lokalny_ranking;
-    public List<Gracz> gracze;
+    List<Gracz> gracze;
 
     static List<Rozgrywka> rozgrywki;
 
@@ -104,7 +104,7 @@ public class Rozgrywka
         // Wyœwietla info o grze jak tabela rankingowa, czas trwania gry, obecni gracze
     }
 
-    public static void Do³¹cz(Gracz gracz)
+    public void Do³¹cz(Gracz gracz)
     {
         // sprawdza czy liczba graczy z tym graczem nie bêdzie przekraczaæ maksymalnej liczby - jeœli nie dodaje go do listy graczy oczekuj¹cych w lobby
     }

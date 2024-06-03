@@ -13,6 +13,6 @@ public class ProsbaDolaczenia
     }
     public void dolacz(){
         // dołącza gracza do lobby rozgrywki
-        rozgrywka.gracze.Add(gracz);
+        rozgrywka.Dołącz(gracz);
     }
 }
