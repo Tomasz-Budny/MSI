@@ -3,15 +3,16 @@ public abstract class Gra
     string nazwa;
     int maksymalnaIloscGraczy;
     float sredniCzasTrwania; //orientacyjny czas
-    List<Gracz> graczeWGrze = new List<Gracz>();
+    Rozgrywka powiązanaRozgrywka; // pozwala na dostęp do graczy
 
     static List<Gra> gry;
 
-    public Gra(string nazwa, int maksymalnaIloscGraczy, float sredniCzasTrwania)
+    public Gra(string nazwa, int maksymalnaIloscGraczy, float sredniCzasTrwania, Rozgrywka powiązanaRozgrywka)
     {
         this.nazwa = nazwa;
         this.maksymalnaIloscGraczy = maksymalnaIloscGraczy;
         this.sredniCzasTrwania = sredniCzasTrwania;
+        this.powiązanaRozgrywka = powiązanaRozgrywka;
     }
     
     public static List<Gra> wyszukajGry()
