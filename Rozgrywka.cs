@@ -14,7 +14,7 @@ public class Rozgrywka
     Serwer serwer;
     Gra gra;
     List<Gracz> lokalny_ranking;
-    List<Gracz> gracze;
+    public List<Gracz> gracze { get; private set; }
 
     static List<Rozgrywka> rozgrywki;
 
@@ -54,8 +54,7 @@ public class Rozgrywka
 
     public void WyœwietlUstawienia()
     {
-        // zwraca ustawieienia takie jak typ rozgrywki, serwer, minimalna rangê oraz haso
-        // TODO: Zobacz czy to siê zgadza bo chyba ty robi³eœ to metodê
+        // zwraca ustawieienia takie jak typ rozgrywki, serwer, minimalna rangê oraz has³o
     }
 
     public void WybierzGrê(Gra wybranaGra)
@@ -193,7 +192,6 @@ public class Rozgrywka
     public void WykonajTurêDlaGracza(Gracz gracz)
     {
         // Sprawdza czy gracz istnieje nastêpnie pozwala mu wykonaæ turê odpalaj¹c metodê g³ówna pêtla rozgrywki. Na koniec aktualizuje lokalny ranking
-        // TODO: Trzeba przemyœleæ jak œledziæ proces w rozgrywce - póki co ten element kuleje u nas. Ja bym proponowa³ zaktualizowaæ g³ówn¹ pêtle rozgrywki tak aby zwraca³a wyniki poszczególnych
-        // graczy ew. posortowano wed³ug tego kto wygrywa listê. Pewnie przyda³oby siê na Grze mieæ referencje do graczy i zrobiæ z tego jakiœ s³ownik punktów. Jak masz lepszy pomys³ pomyœl i zaimplementuj.
+        gra.glownaPetlaRozgrywki();
     }
 }

@@ -1,6 +1,7 @@
 public class Szachy : Gra
 {
     private figurySzachowe[][] plansza;
+    private Dictionary<string, List<figurySzachowe>> figuryGraczy; // figury dla każdego z graczy
 
     public Szachy(string nazwa, float sredniCzasTrwania) : base(nazwa, 2, sredniCzasTrwania)
     {

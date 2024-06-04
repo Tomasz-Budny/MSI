@@ -22,6 +22,6 @@ public class Czat
     }
     public void dodajUczestnika(Uzytkownik uczestnik){
         // dodaje wskazaną osobę do rozmowy
-        uczestnik.czaty.append(this);
+        uczestnik.czaty.Add(this);
     }
 }

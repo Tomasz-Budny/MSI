@@ -1,7 +1,8 @@
 public class Chinczyk : Gra
 {
-    //słownik przechowujący na jakiej pozycji na planszy znajduje się każdy pionek
-    private Dictionary<int, int> pionki = new Dictionary<int, int>();
+    //słownik przechowujący na jakiej pozycji na planszy znajduje się każdy pionek konkretnego gracza
+    private Dictionary<int, string> pionkiNaPlanszy = new Dictionary<int, string>();
+    Dictionary<string, (int, int)> pionkiGraczy; // słownik przetrzymujący zestaw - pseudonim gracza oraz pionki jakie wprowadził do "domku" oraz te które nie wyszły na plansze
     public Chinczyk(string nazwa, float sredniCzasTrwania, int iloscGraczy) : base(nazwa, 4, sredniCzasTrwania)
     {
         //ustawia pionki na pozycjach startowych, zależnie od maksymalnej liczby

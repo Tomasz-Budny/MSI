@@ -1,11 +1,13 @@
 public class Monopoly : Gra
 {
-    private List<int> kontaBankowe = new List<int>();
+    private Dictionary<string, decimal> kontaBankowe = new(); // s³ownik trzymaj¹cy iloœæ pieniêdzy ka¿dego gracza
+    private List<(string, decimal)> dostêpneNieruchomoœci; // lista trzymaj¹ca krotkê wartoœci - nazwa dostêpnej nieruchomoœci oraz jej cena
     private int startowePieniadze;
     public Monopoly(string nazwa, float sredniCzasTrwania, int iloscGraczy) : base(nazwa, 8, sredniCzasTrwania)
     {
-        for(int i = 0; i< iloscGraczy; i++){
-            kontaBankowe.Add(startowePieniadze);
+        foreach(var gracz in powi¹zanaRozgrywka.gracze)
+        {
+            kontaBankowe.Add(gracz.pseudonim, startowePieniadze);
         }
     }
     public virtual void uzyjPodstawowychUstawien(){}

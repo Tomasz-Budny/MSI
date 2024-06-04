@@ -1,7 +1,7 @@
 
 public class Gracz : Uzytkownik
 {
-    string pseudonim;
+    public string pseudonim { get; private set; }
     List<Rozgrywka> historiaRozgrywek = new();
     Ranga ranga;
     int pozycjaWRankingu;
