@@ -30,7 +30,6 @@ public class Rozgrywka
 
         gra.uzyjPodstawowychUstawien();
         UstawKolejnoœæGraczy();
-        gra.glownaPetlaRozgrywki();
     }
 
     public void ZakoñczRozgrywkê()
@@ -191,7 +190,11 @@ public class Rozgrywka
 
     public void WykonajTurêDlaGracza(Gracz gracz)
     {
-        // Sprawdza czy gracz istnieje nastêpnie pozwala mu wykonaæ turê odpalaj¹c metodê g³ówna pêtla rozgrywki. Na koniec aktualizuje lokalny ranking
-        gra.glownaPetlaRozgrywki();
+        // Sprawdza czy rozgrywka jest rozpoczêta gracz istnieje nastêpnie pozwala mu wykonaæ turê odpalaj¹c metodê g³ówna pêtla rozgrywki. Na koniec aktualizuje lokalny ranking
+
+        if(gra.glownaPetlaRozgrywki(gracz))
+        {
+            ZakoñczRozgrywkê();
+        }
     }
 }

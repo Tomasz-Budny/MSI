@@ -24,8 +24,8 @@ public abstract class Gra
     public virtual void uzyjPodstawowychUstawien(){
         //standardowe ustawienia
     }
-    public virtual bool glownaPetlaRozgrywki(){
-        //standardowa obsługa systemów turowych - nadpisuje zmienne na rozgrywce lokalny ranking 
+    public virtual bool glownaPetlaRozgrywki(Gracz gracz) {
+        //standardowa obsługa systemów turowych dla gracza - nadpisuje zmienne na rozgrywce lokalny ranking 
         //jesli tura w którj została uruchomiona jest turą w której ktoś wygrał
         bool czyZakonczona = false; // domyslnie zwraca false, metoda i tak zostaje nadpisana w dziedziczeniu
 

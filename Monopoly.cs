@@ -11,9 +11,9 @@ public class Monopoly : Gra
         }
     }
     public virtual void uzyjPodstawowychUstawien(){}
-	public override bool glownaPetlaRozgrywki()
+	public override bool glownaPetlaRozgrywki(Gracz gracz)
 	{
 		// obs³ugujê turê gracza, gra siê koñczy gdy zostanie jeden gracz nie-bankrut
-		return base.glownaPetlaRozgrywki();
+		return base.glownaPetlaRozgrywki(gracz);
 	}
 }

@@ -12,11 +12,11 @@ public class Szachy : Gra
     {
         base.uzyjPodstawowychUstawien();
     }
-    public override bool glownaPetlaRozgrywki()
+    public override bool glownaPetlaRozgrywki(Gracz gracz)
     {
         // obsługuję turę gracza, przesuwając figury i sprawdza, czy jest szach lub mat
         // przy macie zwraca true, w pozostałych przypadkach false
-        return base.glownaPetlaRozgrywki();
+        return base.glownaPetlaRozgrywki(gracz);
     }
 }
 public enum figurySzachowe{

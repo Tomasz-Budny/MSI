@@ -65,8 +65,8 @@ public class Gracz : Uzytkownik
     public void Do³¹czDoRozgrywki(Rozgrywka rozgrywka)
     {
         // Tworzy proœbê o do³¹czenie - z obecnym graczem oraz z wybran¹ rozgrywk¹
-        // TODO: obmyœliæ jak ten schamat ma dzia³aæ proœbaODo³¹czenie - czy ma przechowywaæ referencje kto tym nadzoruje - czy to ma mieæ host?
         var proœbaODo³¹czenie = new ProsbaDolaczenia();
+        proœbaODo³¹czenie.dolacz();
     }
 
     public void ZaproœDoRozgrywki(Gracz gracz)
@@ -98,7 +98,6 @@ public class Gracz : Uzytkownik
 
     public void WykonajTurê()
     {
-        // TODO: przemyœleæ mechanizm wykonywania tur
         historiaRozgrywek.Last().WykonajTurêDlaGracza(this);
     }
 }

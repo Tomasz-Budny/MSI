@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Michał\\.nuget\\packages\\": {}
+    "C:\\Users\\tomek\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "B:\\RoznyStuff\\Nauka zdalna studia\\SEMESTR M1\\MSI\\ProjektGit\\MSI\\MSI.csproj",
+      "projectUniqueName": "C:\\Users\\tomek\\OneDrive\\Pulpit\\Magisterskie\\semestr1\\MSI\\_projekt\\kod\\MSI\\MSI.csproj",
       "projectName": "MSI",
-      "projectPath": "B:\\RoznyStuff\\Nauka zdalna studia\\SEMESTR M1\\MSI\\ProjektGit\\MSI\\MSI.csproj",
-      "packagesPath": "C:\\Users\\Michał\\.nuget\\packages\\",
-      "outputPath": "B:\\RoznyStuff\\Nauka zdalna studia\\SEMESTR M1\\MSI\\ProjektGit\\MSI\\obj\\",
+      "projectPath": "C:\\Users\\tomek\\OneDrive\\Pulpit\\Magisterskie\\semestr1\\MSI\\_projekt\\kod\\MSI\\MSI.csproj",
+      "packagesPath": "C:\\Users\\tomek\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\tomek\\OneDrive\\Pulpit\\Magisterskie\\semestr1\\MSI\\_projekt\\kod\\MSI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Michał\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\tomek\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -40,6 +40,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -61,7 +66,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

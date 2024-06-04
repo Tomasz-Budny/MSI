@@ -8,9 +8,9 @@ public class Chinczyk : Gra
         //ustawia pionki na pozycjach startowych, zależnie od maksymalnej liczby
     }
     public virtual void uzyjPodstawowychUstawien(){}
-	public override bool glownaPetlaRozgrywki()
+	public override bool glownaPetlaRozgrywki(Gracz gracz)
 	{
 		// obsługuję turę gracza, zwraca true gdy wszystkie 4 pionki któregoś gracza będą na polach końcowych
-		return base.glownaPetlaRozgrywki();
+		return base.glownaPetlaRozgrywki(gracz);
 	}
 }
